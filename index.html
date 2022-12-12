@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="inputText" placeholder="0">
+            <button onclick="clear()">AC</button>
+            <button onclick="del()">DEL</button>
+            <button onclick="modulus()">%</button>
+            <button onclick="divide()">/</button>
+            <button onclick="calculate(7)">7</button>
+            <button onclick="calculate(8)">8</button>
+            <button onclick="calculate(9)">9</button>
+            <button onclick="multiply()">*</button>
+            <button onclick="calculate(4)">4</button>
+            <button onclick="calculate(5)">5</button>
+            <button onclick="calculate(6)">6</button>
+            <button onclick="subtract()">-</button>
+            <button onclick="calculate(1)">1</button>
+            <button onclick="calculate(2)">2</button>
+            <button onclick="calculate(3)">3</button>
+            <button onclick="addition()">+</button>
+            <button onclick="calculate(0)">0</button>
+            <button onclick="calculate('.')">.</button>
+            <button class="equal" onclick="result()">=</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
