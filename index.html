@@ -8,31 +8,30 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <div class="calculator">
-            <input type="text" id="inputText" placeholder="0">
-            <button onclick="clear()">AC</button>
-            <button onclick="del()">DEL</button>
-            <button onclick="modulus()">%</button>
-            <button onclick="divide()">/</button>
-            <button onclick="calculate(7)">7</button>
-            <button onclick="calculate(8)">8</button>
-            <button onclick="calculate(9)">9</button>
-            <button onclick="multiply()">*</button>
-            <button onclick="calculate(4)">4</button>
-            <button onclick="calculate(5)">5</button>
-            <button onclick="calculate(6)">6</button>
-            <button onclick="subtract()">-</button>
-            <button onclick="calculate(1)">1</button>
-            <button onclick="calculate(2)">2</button>
-            <button onclick="calculate(3)">3</button>
-            <button onclick="addition()">+</button>
-            <button onclick="calculate(0)">0</button>
-            <button onclick="calculate('.')">.</button>
-            <button class="equal" onclick="result()">=</button>
+    <main class="container"> 
+        <div class="buttons-container">
+            <div id="display">0</div>
+            <button class="function" id="ac" data-key="46">AC</button>
+            <button class="function" id="del" data-key="8">DEL</button>
+            <button class="function" id="percent">%</button>
+            <button class="operator" id="/" data-key="111">÷</button>
+            <button id="number-7" data-key="55">7</button>
+            <button id="number-8" data-key="56">8</button>
+            <button id="number-9" data-key="57">9</button>
+            <button class="operator" id="*" data-key="106">*</button>
+            <button id="number-4" data-key="52">4</button>
+            <button id="number-5" data-key="53">5</button>
+            <button id="number-6" data-key="54">6</button>
+            <button class="operator" id="-" data-key="173">-</button>
+            <button id="number-1" data-key="49">1</button>
+            <button id="number-2"data-key="50">2</button>
+            <button id="number-3" data-key="51">3</button>
+            <button class="operator" id="+" data-key="107">+</button>
+            <button id="number-0" data-key="48" class="zero">0</button>
+            <button id="decimal" data-key="190">.</button>
+            <button class="operator" id="=" class="equal">=</button>
         </div>
-    </div>
-
+    </main>
     <script src="app.js"></script>
 </body>
 </html>

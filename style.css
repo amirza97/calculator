@@ -28,20 +28,22 @@ body {
     border: 3px solid black;
 }
 
-.calculator {
+.buttons-container {
     display: grid;
     grid-template-columns: repeat(4,99px);
 }
 
-input {
+#display {
     grid-column: span 4;
     height: 90px;
+    border: solid black 1px;
     border-radius: 5px;
     color: rgb(144, 160, 255);
     text-align: end;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     font-size: 80px;
     padding-right: 10px;
+    padding-top: 7px;
     font-family: 'digital-clock-font';
 } 
 
@@ -51,6 +53,10 @@ button {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Kanit', sans-serif;
+}
+
+:hover {
+    color: rgb(112, 112, 112);
 }
 
 .equal {
